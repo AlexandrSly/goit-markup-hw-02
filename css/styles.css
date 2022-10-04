@@ -1,7 +1,15 @@
+:root {
+  --main-title-color: #212121;
+  --second-title-color: #757575;
+  --main-btn-color: #2196f3;
+  --maine-link-color: #2196f3;
+}
+
 body {
   font-family: Roboto, sans-serif;
   background-color: #ffffff;
   color: #757575;
+  font-size: 14px;
   letter-spacing: 0.03em;
 }
 
@@ -12,7 +20,20 @@ body {
 .link {
   text-decoration: none;
 }
-/* білий FFFFFF */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* колір заголовков #212121 */
 /* колір основного текста #757575 */
 /* active 2196F3 */
@@ -20,30 +41,36 @@ body {
 
 /* Heder */
 .logo {
-  color: #2196f3;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.19;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--maine-link-color);
 }
 
-.logo:hover {
-  color: #2196f3;
+.logo:hover,
+.logo:focus {
+  color: var(--maine-link-color);
 }
 
 .logo-studio {
-  color: #212121;
+  color: var(--main-title-color);
 }
 
-.logo-studio:hover {
-  color: #2196f3;
+.logo-studio:hover,
+.logo-studio:focus {
+  color: var(--maine-link-color);
 }
 
-/* site nav */
+/* ----------------site nav---------------- */
 
-.site-nav a {
+.site-nav {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-title-color);
 }
 
 .site-nav:hover,
@@ -53,11 +80,9 @@ body {
 
 .auth-nav {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  color: #757575;
+  color: var(--second-title-color);
 }
 
 .auth-nav:hover,
@@ -65,7 +90,7 @@ body {
   color: #2196f3;
 }
 
-/* Hero */
+/* ----------------Hero---------------- */
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -74,11 +99,10 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  background: #2f303a;
 }
 
 .hero {
-  color: #ffffff;
+  background: #2f303a;
 }
 
 .btn {
@@ -111,33 +135,29 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  color: #212121;
+  color: var(--main-title-color);
 }
 
 .benefits-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--main-title-color);
 }
 
 .benefits-subtitle {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  color: #757575;
 }
 
 .section-subtitle {
-  color: #757575;
+  color: var(--second-title-color);
 }
 
 .team-title {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: #212121;
+  color: var(--main-title-color);
 }
 
 .team-subtitle {
@@ -145,10 +165,13 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: #757575;
+  color: var(--second-title-color);
 }
 
-/* Портфоліо */
+.team-list {
+  background: #f5f4fa;
+}
+/* ----------------Портфоліо---------------- */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -175,11 +198,65 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--main-title-color);
 }
 
 .portfolio-subtitle {
   font-size: 16px;
   line-height: 30px;
-  color: #757575;
+  color: var(--second-title-color);
+}
+
+/* ----------------Footer---------------- */
+
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-link {
+  font-style: normal;
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.19;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.portfolio-btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+  background-color: #f5f4fa;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.portfolio-nav {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.portfolio-nav:hover,
+.portfolio-nav:focus {
+  color: #2196f3;
+}
+
+.current {
+  color: var(--maine-link-color);
 }
