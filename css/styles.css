@@ -44,8 +44,8 @@ body {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 1.19;
-  line-height: 31px;
+  font-size: 26;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--maine-link-color);
 }
@@ -112,6 +112,8 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
 }
 
 .btn.primary {
@@ -127,7 +129,6 @@ body {
 .btn:hover,
 .btn:focus {
   color: #ffffff;
-  background-color: #2196f3;
 }
 
 .section-title {
@@ -140,6 +141,7 @@ body {
 
 .benefits-title {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-title-color);
@@ -168,7 +170,7 @@ body {
   color: var(--second-title-color);
 }
 
-.team-list {
+.team {
   background: #f5f4fa;
 }
 /* ----------------Портфоліо---------------- */
@@ -186,13 +188,6 @@ body {
   overflow: hidden;
 }
 
-.portfolio-btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  color: #ffffff;
-}
-
 .portfolio-title {
   font-weight: 700;
   font-size: 18px;
@@ -203,7 +198,7 @@ body {
 
 .portfolio-subtitle {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.88;
   color: var(--second-title-color);
 }
 
@@ -237,6 +232,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-title-color);
   background-color: #f5f4fa;
+  cursor: pointer;
 }
 
 .portfolio-btn:hover,
@@ -245,18 +241,30 @@ body {
   background-color: #2196f3;
 }
 
-.portfolio-nav {
+.portfolio-adress {
   font-weight: 500;
-  line-height: 1.14;
+  line-height: 1.71;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
 
-.portfolio-nav:hover,
-.portfolio-nav:focus {
+.portfolio-adress:hover,
+.portfolio-adress:focus {
   color: #2196f3;
 }
 
 .current {
   color: var(--maine-link-color);
+}
+
+.portfolio-contacts {
+  font-weight: 500;
+  line-height: 1.71;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.portfolio-contacts:hover,
+.portfolio-contacts:focus {
+  color: #2196f3;
 }
